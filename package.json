@@ -1,0 +1,22 @@
+{
+  "name": "cloudkarafka-spike",
+  "version": "1.0.0",
+  "description": "- Spike cloud karafka integration with node-rdkafka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juraci/cloudkarafka-spike.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juraci/cloudkarafka-spike/issues"
+  },
+  "homepage": "https://github.com/Juraci/cloudkarafka-spike#readme",
+  "dependencies": {
+    "node-rdkafka": "^0.10.2"
+  }
+}
