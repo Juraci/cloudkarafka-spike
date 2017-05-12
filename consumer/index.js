@@ -3,6 +3,14 @@ const TOPIC_NAME = '5nik-darksouls';
 const fs = require('fs');
 const brokers = 'steamer-01.srvs.cloudkafka.com:9093,steamer-02.srvs.cloudkafka.com:9093,steamer-03.srvs.cloudkafka.com:9093';
 
+fs.writeFileSync("/tmp/kafka.ca", process.env.CLOUDKARAFKA_CA);
+fs.writeFileSync("/tmp/kafka.cert", process.env.CLOUDKARAFKA_CERT);
+fs.writeFileSync("/tmp/kafka.key", process.env.CLOUDKARAFKA_PRIVATE_KEY);
+
+console.log('>>>> ca', process.env.CLOUDKARAFKA_CA);
+console.log('>>>> cert', process.env.CLOUDKARAFKA_CERT);
+console.log('>>>> private key', process.env.CLOUDKARAFKA_PRIVATE_KEY);
+
 const config = {
   'client.id': 'example-node-kafka',
   'group.id': 'squad-a',
